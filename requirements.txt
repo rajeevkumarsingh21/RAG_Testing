@@ -1,0 +1,31 @@
+# =============================================================================
+# Python dependencies for RAG_Testing.py
+# -----------------------------------------------------------------------------
+# Tested against Python 3.11. Install with:
+#     pip install -r requirements.txt
+#
+# You'll also need an ANTHROPIC_API_KEY set in a local .env file for the
+# Claude calls (see python-dotenv usage in RAG_Testing.py).
+# =============================================================================
+
+# Core numerics
+numpy>=1.26,<3.0
+
+# From-scratch embedding model used by SimpleVectorSearch
+sentence-transformers>=3.0.0
+
+# LangChain bindings used to build the persistent Chroma vector store
+langchain-huggingface>=0.1.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-chroma>=0.1.4
+
+# Vector database
+chromadb>=0.5.0
+
+# PDF loader used by langchain_community.document_loaders.PyPDFLoader
+pypdf>=4.0.0
+
+# Anthropic / Claude API client + .env loading
+anthropic>=0.40.0
+python-dotenv>=1.0.0
