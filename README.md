@@ -1,1 +1,1 @@
-Python Code for RAG Implementation with Claude LLM
+Python Code and Jupyter Notebook for RAG Implementation with Claude LLM
